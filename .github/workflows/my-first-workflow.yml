@@ -2,7 +2,7 @@ name:  workflow proceso
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
 jobs:
   paso-1: 
     runs-on: ubuntu-latest
