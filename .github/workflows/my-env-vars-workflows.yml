@@ -2,7 +2,7 @@ name: My Env Vars Workflow
 on:
   push:
     branches:
-      - 'secrets'
+      - 'master'
 env:
   DB_NAME: db-name
 jobs:
