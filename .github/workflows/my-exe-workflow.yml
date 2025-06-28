@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Saludos
-        uses: echo "Hola Mundo!!"
+        run: echo "Hola Mundo!!"
       - name: Print Github Metadata
         run: echo "${{ toJSON(github) }}"
         
