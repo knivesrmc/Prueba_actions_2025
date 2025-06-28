@@ -16,6 +16,6 @@ jobs:
       - name: Install dependencias Python
         run: |
           pip install --upgrade pip
-          python pip install -r requeriments.txt
+          pip install -r requeriments.txt
       - name: Split Dataset
         run: python src/0-split-dataset.py
