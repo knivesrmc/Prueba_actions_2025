@@ -23,3 +23,19 @@ jobs:
     steps:
       - name: Get Code
         uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - name: Deploy cache Code
+        run: echo "Ejecutando deploy de codigo en AWS"
+  paso-3:
+    needs: paso-2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Saludos
+        uses: echo "Hola Mundo!!"
+      - name: Print Github Metadata
+        run: echo "${{ toJSON(github) }}"
+        
+      
